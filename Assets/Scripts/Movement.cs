@@ -55,7 +55,7 @@ public class Movement : MonoBehaviour
         Debug.Log("Going Left");
         ApplyRotation(rotationThrust);
         if(!rightThrusterParticle.isPlaying){
-        rightThrusterParticle.Play();}
+        rightThrusterParticle.Play();
        }
        else{
         leftThrusterParticle.Stop();
@@ -67,4 +67,5 @@ public class Movement : MonoBehaviour
        transform.Rotate(Vector3.forward * rotationthisframe * Time.deltaTime);
        rb.freezeRotation = false; // unfreezing the rotation manually
     }
+}
 }

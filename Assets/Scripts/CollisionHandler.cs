@@ -9,6 +9,7 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float levelloaddelay = 1.5f;
     [SerializeField] AudioClip CrashSound;
     [SerializeField] AudioClip SuccessSound;
+    
     [SerializeField] ParticleSystem SuccessParticle;
     [SerializeField] ParticleSystem CrashParticle;
 
